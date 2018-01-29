@@ -5,8 +5,8 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4>DAFTAR OBAT
-						<a href="{{route('obat.create')}}" class="btn btn-success pull- right" style="margin-top: -8px">TAMBAH </a>
-						<a href="#"class="btn btn-primary pull- right" style="margin-top: -8px">PRINT</a>
+						<a href="{{route('obat.pdf')}}" class="btn btn-success pull- right" style="margin-top: -8px">TAMBAH </a>
+						<a href="{{route('obat.pdf')}}"class="btn btn-primary pull- right" style="margin-top: -8px">PRINT</a>
 						<br>
 						</h4>
 					

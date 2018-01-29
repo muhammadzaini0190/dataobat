@@ -19,7 +19,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware'=>'auth'],function(){
     Route::resource('obat', 'ObatController');
+    
 });
+Route::get('/obat/download-laporan-pdf', 'obatController@getPdf')->name('obat.pdf');
+
 
 
 

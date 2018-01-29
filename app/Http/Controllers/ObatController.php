@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Obat;
+use PDF;
 
 class ObatController extends Controller
 {
@@ -79,5 +80,12 @@ class ObatController extends Controller
         $obat=Obat::find($id);
         $obat->delete();
         return redirect('/obat');
+    }
+    public function getPdf()
+    {
+        $obat = obat::all();
+        $pdf = pdf::loadview('pdf',compact('obat'));
+        return $pdf->download('obat.pdf',compact('obat'));
+
     }
 }

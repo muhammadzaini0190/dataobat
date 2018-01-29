@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1>DATA OBAT</h1>
-                <p>lorem120</p>
+                <h1><strong>DATA OBAT</strong></h1>
+          
             </div>
 
             <div class="col-md-6">
